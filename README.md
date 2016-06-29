@@ -39,6 +39,8 @@ Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an aut
 
 [Virtual Machines - Learning Path](https://azure.microsoft.com/en-us/documentation/learning-paths/virtual-machines/)
 
+[Manage the availability of virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-manage-availability/)
+
 If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
 
 ---
