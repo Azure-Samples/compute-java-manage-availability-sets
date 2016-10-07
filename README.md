@@ -1,18 +1,16 @@
 ---
-services: compute
+services: Compute
 platforms: java
 author: selvasingh
 ---
 
+#Getting Started with Compute - Manage Availability Set - in Java #
 
 
-# Getting Started with Compute - Manage Availability Set - in Java #
-
-Compute Manage Virtual Machine Sample (for 1.0.0-beta2) - demonstrates how to perform common tasks using the Microsoft Azure Compute service.
-
+  Azure Compute sample for managing availability sets -
    - Create an availability set
-   - Create a virtual machine in a new availability set
-   - Create another virtual machine in the same availability set
+   - Create a VM in a new availability set
+   - Create another VM in the same availability set
    - Update the availability set
    - Create another availability set
    - List availability sets
@@ -34,12 +32,6 @@ Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an aut
 ## More information ##
 
 [http://azure.com/java] (http://azure.com/java)
-
-[Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)
-
-[Virtual Machines - Learning Path](https://azure.microsoft.com/en-us/documentation/learning-paths/virtual-machines/)
-
-[Manage the availability of virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-manage-availability/)
 
 If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
 
