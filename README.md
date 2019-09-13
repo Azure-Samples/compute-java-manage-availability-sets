@@ -4,9 +4,8 @@ languages:
 - java
 products:
 - azure
-extensions:
-- services: Compute
-- platforms: java
+description: "Azure Compute sample for managing availability sets"
+urlFragment: compute-java-manage-availability-sets
 ---
 
 # Getting Started with Compute - Manage Availability Set - in Java #
