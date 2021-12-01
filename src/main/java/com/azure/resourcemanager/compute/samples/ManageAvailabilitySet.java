@@ -39,7 +39,7 @@ public final class ManageAvailabilitySet {
      * @return true if sample runs successfully
      */
     public static boolean runSample(AzureResourceManager azureResourceManager) {
-        final Region region = Region.US_WEST_CENTRAL;
+        final Region region = Region.US_WEST;
         final String rgName = Utils.randomResourceName(azureResourceManager, "rgCOMA", 15);
         final String availSetName1 = Utils.randomResourceName(azureResourceManager, "av1", 15);
         final String availSetName2 = Utils.randomResourceName(azureResourceManager, "av2", 15);
@@ -49,6 +49,7 @@ public final class ManageAvailabilitySet {
 
         final String userName = "tirekicker";
         final String password = Utils.password();
+        final String sshPublicKey = Utils.sshPublicKey();
 
         try {
 
@@ -115,7 +116,7 @@ public final class ManageAvailabilitySet {
                     .withoutPrimaryPublicIPAddress()
                     .withPopularLinuxImage(KnownLinuxVirtualMachineImage.UBUNTU_SERVER_16_04_LTS)
                     .withRootUsername(userName)
-                    .withRootPassword(password)
+                    .withSsh(sshPublicKey)
                     .withSize(VirtualMachineSizeTypes.fromString("Standard_D2a_v4"))
                     .withExistingAvailabilitySet(availSet1)
                     .create();
